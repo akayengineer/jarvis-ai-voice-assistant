@@ -1,11 +1,26 @@
 # jarvis-ai-voice-assistant
 An intelligent voice-controlled AI assistant capable of system automation and real-time responses
+[Jarvis AI Overview]
+<img width="1024" height="1536" alt="file_0000000046dc720788c0425c3680b9f6" src="https://github.com/user-attachments/assets/f09f0564-c716-4468-9a8f-48a4d52fc066" />
+
+## 🧠 Architecture (Simplified Flow)
+
+[Jarvis AI Architecture]
+<img width="1024" height="1536" alt="file_000000001edc7207a364134e3dc1ac50" src="https://github.com/user-attachments/assets/72e998cb-1a7b-4f14-9963-966cce067f68" />
+
+## 📌 Sample Commands
+
+[Jarvis AI Commands]
+<img width="1024" height="1536" alt="file_00000000b9607207bb6d10dfff1d73bf" src="https://github.com/user-attachments/assets/487c8031-03a6-49fa-bb26-580b5e84b637" />
+
+
 # Jarvis AI – Intelligent Voice-Controlled Assistant 🤖🎙️
 
 ### Built by Amit Kumar | Applied AI System Builder  
 **Tech Stack:** Python | SpeechRecognition | pyttsx3 | OS Automation | REST APIs | NLP  
 
 ---
+
 
 ## 🧩 Overview
 Jarvis AI is an intelligent voice-controlled desktop assistant inspired by the idea of human–AI collaboration.  
@@ -41,7 +56,7 @@ making it closer to an *early-stage personal AI system*.
 ---
 
 ## 🛠️ Tech Stack
-- **Python 3.9+**
+- **Python 3.13.4**
 - Libraries: `speech_recognition`, `pyttsx3`, `os`, `requests`, `datetime`, `time`
 - APIs: Weather API, AQI API, Perplexity AI (key-based)
 - Environment: Windows OS (tested)
