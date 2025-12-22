@@ -20,7 +20,7 @@ making it closer to an *early-stage personal AI system*.
 - **Voice Command Recognition** — Real-time command detection using `speech_recognition`
 - **Wake Word Activation** — Always-listening mode with “Jarvis” or “Hello” triggers
 - **System Control** — Open applications, take screenshots, start/stop recordings, shutdown system, and more
-- **Online Intelligence** — Fetch weather, AQI, and knowledge-based responses via external APIs
+- Online Intelligence – Fetches weather, AQI, and open-domain answers using external APIs (including Perplexity AI for LLM-based reasoning)
 - **Conversational Responses** — Contextual greetings, prompts, and human-like feedback
 - **Automation Layer** — Seamless OS-level actions through Python’s automation modules
 - **Emotion-aware design (in progress)** — Future goal: detect voice tone and respond empathetically
@@ -28,18 +28,16 @@ making it closer to an *early-stage personal AI system*.
 ---
 
 ## 🧠 Architecture (Simplified Flow)
-🎙️ Voice Input
-↓
-Speech Recognition (speech_recognition)
-↓
-Intent Detection (Rule-based NLP)
-↓
-Action Execution
-├── OS Commands (Notepad, Browser, System Functions)
-├── API Responses (Weather, AQI, Perplexity)
-↓
-🎧 Text-to-Speech Output (pyttsx3)
 
+🎙️ Voice Input (Microphone)  
+→ Speech Recognition (`speech_recognition`)  
+→ Intent Detection (Rule-based NLP)  
+→ Task Orchestration Layer  
+   ├─ System Automation (OS-level actions via Python)  
+   ├─ API Intelligence (Weather, AQI, Perplexity AI)  
+→ Response Generation  
+→ 🎧 Text-to-Speech Output (`pyttsx3`)
+ 
 ---
 
 ## 🛠️ Tech Stack
@@ -47,9 +45,28 @@ Action Execution
 - Libraries: `speech_recognition`, `pyttsx3`, `os`, `requests`, `datetime`, `time`
 - APIs: Weather API, AQI API, Perplexity AI (key-based)
 - Environment: Windows OS (tested)
-
+- - LLM Usage: Perplexity API used for knowledge-based responses (LLM-powered reasoning)  
+- **Architecture Type:** Event-driven, command-based AI assistant  
+- **Execution Model:** Real-time voice input → intent mapping → action execution
 ---
+## 🧠 AI System Summary
 
+Jarvis AI is not a simple chatbot. It is an applied AI assistant that combines:
+
+- Voice-based human interaction
+- Rule-based NLP for intent understanding
+- System-level automation
+- API-driven intelligence using LLM-powered services
+
+The project demonstrates how AI systems can move beyond text-based interaction and perform real-world actions through intelligent orchestration of speech, automation, and external intelligence.
+
+## 🎯 Why This Project Matters
+
+This project was built to explore how intelligent agents can:
+- Understand human intent beyond commands
+- Perform real-world system actions
+- Combine automation with LLM-based reasoning
+- Act as early-stage personal AI systems rather than basic assistants
 ## 🧪 Sample Commands
 | Command | Function |
 |----------|-----------|
